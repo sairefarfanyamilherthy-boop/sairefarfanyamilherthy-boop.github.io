@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Protectores</title>
+    <link rel="stylesheet" href="case.css">
+</head>
+<body>
+    
+
+
+
+    <header class="app-header">
+        <img src="img/logo kati case.png" alt="Logo de Inventario" class="app-logo">
+        <h1>📦 <strong>Inventario de Protectores de Celulares</strong></h1>
+    </header>
+
+    <main class="container">
+        <section class="card add-product-form">
+            <h2>Agregar Nuevo Protector</h2>
+            <form id="productForm">
+                <input type="text" id="productName" placeholder="Modelo de Teléfono (ej. iPhone 15 Pro)" required>
+                <input type="url" id="productImage" placeholder="URL de la imagen (opcional)">
+
+                <div class="color-quantity-group">
+                    <label for="quantityNegro">Cantidad Negro:</label>
+                    <input type="number" id="quantityNegro" placeholder="Cantidad" value="0" min="0">
+                </div>
+                
+                <div class="color-quantity-group">
+                    <label for="quantityTransparente">Cantidad Transparente:</label>
+                    <input type="number" id="quantityTransparente" placeholder="Cantidad" value="0" min="0">
+                </div>
+
+                <div class="color-quantity-group">
+                    <label for="quantity2en1">Cantidad 2 en 1:</label>
+                    <input type="number" id="quantity2en1" placeholder="Cantidad" value="0" min="0">
+                </div>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+
+        <section class="card product-list-container">
+            <h2>Lista de Productos Recibidos</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn" data-model="iPhone">iPhone</button>
+                <button class="filter-btn" data-model="Samsung">Samsung</button>
+                <button class="filter-btn" data-model="Google">Google</button>
+                <button class="filter-btn" data-model="Huawei">Huawei</button>
+                <button class="filter-btn" data-model="Xiaomi">Xiaomi</button>
+                <button class="filter-btn" data-model="Redmi">Redmi</button>
+                <button class="filter-btn" data-model="Honor">Honor</button>
+                <button class="filter-btn" data-model="Oppo">Oppo</button>
+                <button class="filter-btn" data-model="Vivo">Vivo</button>
+                <button class="filter-btn" data-model="Motorola">Motorola</button>
+                <button class="filter-btn" data-model="OnePlus">OnePlus</button>
+                <button class="filter-btn" data-model="Nokia">Nokia</button>
+                <button class="filter-btn" data-model="all">Todos</button>
+            </div>
+            
+            <input type="text" id="searchInput" placeholder="Buscar por modelo o color..." class="search-input">
+            <ul id="productList">
+            </ul>
+        </section>
+        
+        
+
+    </main>
+    <footer>
+        <p>&copy; 2025 - diseñador por yamil saire</p>
+    </footer>
+    <script src="case.js"></script>
+
+
+
+    
+</body>
+</html>
